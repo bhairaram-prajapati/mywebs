@@ -3,49 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIKULTECH LANDING PAGE</title>
+    <title>GAMES-TECH PAGE</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">NIKUL TECH</div>
-        <nav>
+        <div class="logo">GAMES-TECH</div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
             <ul>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#service">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="hero">
-        <h1>Welcome to My NIKUL TECH</h1>
-        <p>Your journey to success starts here.</p>
-        <a href="#contact" class="cta-button">Get Started</a>
+        <h1>Welcome to My GAMES-TECH</h1>
+        <p>Your journey to build and enjoy starts here.</p>
+        <a href="#simple-form" class="cta-button">Get Started</a>
     </section>
+
     <section id="features">
         <h2>Our Features</h2>
         <div class="feature-box">
-            <h3>Learn </h3>
-            <p>NIKUL TECH MAKE LEARNING EASIER</p>
+            <h3>Learn</h3>
+            <p>GAMES-TECH MAKES ATTRACTIVE UI-BASED PRODUCTS</p>
         </div>
         <div class="feature-box">
             <h3>Improvement Assistance</h3>
-            <p>NIKUL TECH HELPS IN IMPROVEMENT</p>
+            <p>GAMES-TECH FOCUS IN IMPROVEMENT IN EACH PHASE</p>
         </div>
         <div class="feature-box">
             <h3>Explore</h3>
-            <p>NKULTECH HELPS IN EXPLORATION</p>
+            <p>GAMES-TECH HELPS IN EXPLORATION</p>
         </div>
     </section>
-    <section id="testimonials">
+
+    <section id="service">
         <h2>What Our Clients Say</h2>
         <blockquote>
-            <p>"This service changed my vision!"</p>
+            <p>"Their services made great impact & enjoyed a lot!"</p>
             <cite>- Happy Client</cite>
         </blockquote>
     </section>
+
+    <section id="simple-form">
+        <h2>Quick Contact</h2>
+        <form id="bottomForm" class="quick-form">
+            <div class="form-row">
+                <input class="quick-input" type="text" name="quickname" placeholder="Your Name" required>
+                <input class="quick-input" type="email" name="quickemail" placeholder="Your Email" required>
+            </div>
+            <button class="quick-submit" type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="tictactoe">
+        <div class="msg-container hide">
+            <p id="msg">Winner</p>
+            <button id="new-btn">New Game</button>
+        </div>
+        <main>
+            <h1>Tic-tac-toe-game</h1>
+            <div class="container">
+                <div class="game">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+            <button id="reset-btn">Reset Game</button>
+        </main>
+    </section>
+
     <footer>
-        <p>&copy; 2025 NIKULTECH. All rights reserved.</p>
+        <div class="footer">
+            <p>&copy; 2025 GAMES-TECH. All rights reserved.</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
