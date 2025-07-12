@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f0ff; /* Light lavender background for a soft look */
+}
+
+header {
+    background: #6A0DAD; /* Deep purple for the header */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 32px; /* Larger font for emphasis */
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #FFD700; /* Gold for contrast */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+.hero {
+    background: linear-gradient(to right, #6A0DAD, #9B30FF), url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background: #FFD700; /* Gold for the call-to-action button */
+    color: #6A0DAD; /* Purple text for contrast */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #FFC107; /* Slightly darker gold on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #6A0DAD;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.feature-box {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box h3 {
+    color: #6A0DAD;
+    font-size: 24px;
+}
