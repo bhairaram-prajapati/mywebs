@@ -117,3 +117,21 @@ const checkWinner=()=>{
 newGamebtn.addEventListener("click",resetGame);
 resetBtn.addEventListener("click",resetGame);
 
+// Hamburger menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger-btn');
+    const nav = document.getElementById('main-nav');
+    if (hamburger && nav) {
+        hamburger.addEventListener('click', function() {
+            nav.classList.toggle('open');
+            document.body.classList.toggle('menu-open', nav.classList.contains('open'));
+        });
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
+});
+
